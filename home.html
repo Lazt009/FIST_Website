@@ -55,6 +55,9 @@
         </nav>
 
 
+
+
+        
         <!-- Content -->
         <div class="content">
 
@@ -82,6 +85,7 @@
             </nav>
             
             <div class="body-bottom">
+                <br>
                 <div class="container">
                     <div class="row">
                         <div class="col-sm">
@@ -123,7 +127,7 @@
                             <!-- Code for display card of EC -->
                             <div class="display-card card-gradient3">
                                 <div class="display-card-heading">
-                                    <h4>RTD</h4>
+                                    <h4>EC</h4>
                                 </div>
                                 <div class="display-card-body">
                                     <h2>88.888</h2>
@@ -140,7 +144,7 @@
                             <!-- Code For Display Card of ORP -->
                             <div class="display-card card-gradient4">
                                 <div class="display-card-heading">
-                                    <h4>RTD</h4>
+                                    <h4>ORP</h4>
                                 </div>
                                 <div class="display-card-body">
                                     <h2>88.888</h2>
@@ -157,7 +161,7 @@
                             <!-- Code for Display card of DO -->
                             <div class="display-card card-gradient5">
                                 <div class="display-card-heading">
-                                    <h4>RTD</h4>
+                                    <h4>DO</h4>
                                 </div>
                                 <div class="display-card-body">
                                     <h2>88.888</h2>
@@ -173,6 +177,13 @@
                     
                 </div>
 
+
+
+
+
+
+
+
                 <!-- Heading of Graphs -->
                 <br>
                 <br>
@@ -183,70 +194,71 @@
                 <div class="container">
                     <div class="form-block">
                         <form action="">
-                            <div class="form-field">
-                                <label class="form-label" for="start-date">Start Date </label>
-                                <input class="form-input form-select" type="datetime-local">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <label class="form-label text-center" for="start-date">Start Date</label>
+                                </div>
+                                <div class="col-sm">
+                                    <input id="start-date" class="form-input form-select" type="datetime-local">
+                                </div>
                             </div>
                             <br>
-                            <div class="form-field">
-                                <label class="form-label" for="end-date">End Date </label>
-                                <input class="form-input form-select" type="datetime-local">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <label class="form-label text-center" for="end-date">End Date</label>
+                                </div>
+                                <div class="col-sm">
+                                    <input id="end-date" class="form-input form-select" type="datetime-local">
+                                </div>
                             </div>
                             <br>
-                            <div class="form-fieldt">
-                                <label class="form-label" for="graph-type">Graph Type </label>
-                                <select class="form-input form-select">
-                                    <option >line </option>
-                                    <option > bar </option>
-                                    <option > column </option>
-                                    <option > spline </option>
-                                  </select>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <label class="form-label text-center" for="graph-type">Graph Type </label>
+                                </div>
+                                <div class="col-sm">
+                                    <select id="graph-type" class="form-input form-select">
+                                        <option >Line </option>
+                                        <option > Bar </option>
+                                        <option > Column </option>
+                                        <option > Spline </option>
+                                      </select>
+                                </div>
                             </div>
                         </form>
                     </div>
                 </div>
+                <br>
+                <br>
 
-                <br>
-                <br>
-                <br>
                 <!-- Container for Graphs -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm graph-style">
-                            <iframe style="border-radius: 10px" src="https://thingspeak.com/channels/983726/charts/1?start=2021-02-25%2018:10:00&end=2021-05-08%2008:03:00&dynamic=true&type=line&update=1" title="PH"  width="100%" height="250px" frameborder="0"></iframe>
+                        <div class="col-sm">
+                            <iframe class="iframe-style" src="https://thingspeak.com/channels/983726/charts/1?start=2021-02-25%2018:10:00&end=2021-05-08%2008:03:00&dynamic=true&type=line&update=1"></iframe>
                         </div>
 
-                        <div class="col-sm graph-style">
-                            <iframe style="border-radius: 10px" src="https://thingspeak.com/channels/983726/charts/2?start=2021-02-25%2018:10:00&end=2021-05-08%2008:03:00&dynamic=true&type=line&update=1" title="PH"  width="100%" height="250px" frameborder="0"></iframe>
+                        <div class="col-sm">
+                            <iframe class="iframe-style" style="border-radius: 10px" src="https://thingspeak.com/channels/983726/charts/2?start=2021-02-25%2018:10:00&end=2021-05-08%2008:03:00&dynamic=true&type=line&update=1"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <iframe class="iframe-style" style="border-radius: 10px" src="https://thingspeak.com/channels/983726/charts/3?start=2021-02-25%2018:10:00&end=2021-05-08%2008:03:00&dynamic=true&type=line&update=1"></iframe>
                         </div>
 
-                        <div class="col-sm graph-style">
-                            <iframe style="border-radius: 10px" src="https://thingspeak.com/channels/983726/charts/3?start=2021-02-25%2018:10:00&end=2021-05-08%2008:03:00&dynamic=true&type=line&update=1" title="PH"  width="100%" height="250px" frameborder="0"></iframe>
+                        <div class="col-sm">
+                            <iframe class="iframe-style" style="border-radius: 10px" src="https://thingspeak.com/channels/983726/charts/4?start=2021-02-25%2018:10:00&end=2021-05-08%2008:03:00&dynamic=true&type=line&update=1"></iframe>
                         </div>
+                    </div>
 
-                        <div class="col-sm graph-style">
-                            <iframe style="border-radius: 10px" src="https://thingspeak.com/channels/983726/charts/4?start=2021-02-25%2018:10:00&end=2021-05-08%2008:03:00&dynamic=true&type=line&update=1" title="PH"  width="100%" height="250px" frameborder="0"></iframe>
+                    <div class="row">
+                        <div class="col-sm">
+                            <iframe class="iframe-style" src="https://thingspeak.com/channels/983726/charts/5?start=2021-02-25%2018:10:00&end=2021-05-08%2008:03:00&dynamic=true&type=line&update=1"></iframe>
                         </div>
-
-                        <div class="col-sm graph-style">
-                            <iframe style="border-radius: 10px" src="https://thingspeak.com/channels/983726/charts/5?start=2021-02-25%2018:10:00&end=2021-05-08%2008:03:00&dynamic=true&type=line&update=1" title="PH"  width="100%" height="250px" frameborder="0"></iframe>
-                        </div>
-                        <!-- <div class="col-sm graph-style">
-                            <iframe src="https://thingspeak.com/channels/983726/charts/1?start=2021-02-25%2018:10:00&end=2021-05-08%2008:03:00&dynamic=true&type=line&update=1"></iframe>
-                        </div>
-                        <div class="col-sm graph-style">
-                            <iframe src="https://thingspeak.com/channels/983726/charts/1?start=2021-02-25%2018:10:00&end=2021-05-08%2008:03:00&dynamic=true&type=line&update=1"></iframe>
-                        </div>
-                        <div class="col-sm graph-style">
-                            <iframe src="https://thingspeak.com/channels/983726/charts/1?start=2021-02-25%2018:10:00&end=2021-05-08%2008:03:00&dynamic=true&type=line&update=1"></iframe>
-                        </div>
-                        <div class="col-sm graph-style">
-                            <iframe src="https://thingspeak.com/channels/983726/charts/1?start=2021-02-25%2018:10:00&end=2021-05-08%2008:03:00&dynamic=true&type=line&update=1"></iframe>
-                        </div> -->
-                      </div>
+                    </div>
                 </div>
-
-                <div id="graphDiv"></div>
 
             </div>
         </div>

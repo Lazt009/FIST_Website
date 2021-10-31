@@ -1,10 +1,43 @@
-$BGcolor : #272727; //black
-$color1 : #747474; //grey
-$color2 : #FF652F;  //red
-$color3 : white;  //yellow
-$color4 : #7589e0;  //green
-$sidebar-text : #7589e0;
+// Main Colors
 
+
+
+// Navbar Styles
+$navbar-background : white;
+
+$navbar-menu-color : white;
+$navbar-menu-color-hover : #6d7fcc;
+$navbar-menu-background : #6d7fcc;
+$navbar-menu-background-hover : white;
+
+$navbar-heading-color : #6d7fcc;
+$navbar-heading-color-hover : #6d7fcc;
+
+$navbar-icon-color : #6d7fcc;
+$navbar-icon-color-hover : pink;
+
+
+
+// Sidebar Styles
+$sidebar-background : #6d7fcc;
+$sidebar-background-active : #7589e0;
+$sidebar-background-hover : white;
+
+$sidebar-heading-color: white;
+$sidebar-text-color : white;
+$sidebar-text-color-hover :  #6d7fcc;
+
+$sidebar-dismiss-color : white;
+$sidebar-dismiss-color-hover : #7589e0;
+$sidebar-dismiss-background-hover : white;
+$sidebar-dismiss-background : #6d7fcc;
+
+
+// Display Card Styles
+$display-card-heading-color : white;
+$display-card-body-color : white;
+$display-heart-color : white;
+// Gradient Styles for Cards
 $gradient1 : linear-gradient(230deg, #759bff, #843cf6);
 $gradient2 : linear-gradient(230deg, #fc5286, #fbaaa2);
 $gradient3 : linear-gradient(230deg, #ffc480, #ff763b);

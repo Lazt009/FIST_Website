@@ -4,7 +4,7 @@
     CARD STYLES
 ----------------------------------------------------- */
 .display-card{
-    width: 150px;
+    width: 195px;
     height: 150px;
     border-radius: 0.8rem;
     margin: 20px auto;
@@ -26,7 +26,7 @@
     background-image: $gradient5;
 }
 .display-card-heading{
-    color: white;
+    color: $display-card-heading-color;
     width: 100%;
     padding-top: 20px;
     padding-left: 10px;
@@ -34,19 +34,19 @@
 }
 
 .display-card-body{
-    color: white;
+    color: $display-card-body-color;
     padding-left: 10px;
     margin: 0px;
 }
 
 .display-card-heart{
     width: 100%;
-    padding-left: 90px;
+    padding-left: 120px;
     margin-top: -10px;  
 }
 
 .heart-style{
-    color: white;
+    color: $display-heart-color;
     opacity: 0.5;
     font-size: 3.0rem;
 }
@@ -58,44 +58,38 @@
     FORM STYLES
 ----------------------------------------------------- */
 .form-block{
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
-.form-field{
-    width: 100%;;
+.form-block form{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 .form-label{
-    width: 30%;
+    width: 100%;
+    margin-bottom: 0px;
+    font-size: 1.2rem;
 }
 .form-input{
-    width: 69%;
+    width: 100%;
+}
+.form-select {
+    border-radius: 0.3rem;
+    border: 1px solid #ced4da;
+    height: 30px;
+    padding-left: 10px;
 }
 
 
 
-.form-select {
-    /* display: block; */
-    /* width: 150px; */
-    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
-    padding-left: 50px;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    /* background-color: #fff;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: right 0.75rem center;
-    background-size: 16px 12px; */
-    border: 1px solid #ced4da;
-    border-radius: 0.3rem;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
 
-// .graph-style{
-//     width: 400px;
-//     height: 200px;
-//     margin: auto;
-// }
+/* ---------------------------------------------------
+    GRAPH STYLES
+----------------------------------------------------- */
+.iframe-style{
+    width: 100%;
+    height: 235px;
+    border-radius: 10px;
+    border: 1px solid black;
+}

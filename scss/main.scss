@@ -12,43 +12,45 @@ body {
 /* ---------------------------------------------------
     NAVBAR STYLE
 ----------------------------------------------------- */
-.menuBar{
-    background-color: $color4;
-    color: white;
+.navbar {
+    background-color: $navbar-background;
+}
 
+.menuBar{
+    background-color: $navbar-menu-background;
+    color: $navbar-menu-color;
+    
     &:hover{
-        background-color: $color3;
+        background-color: $navbar-menu-background-hover;
+        color: $navbar-menu-color-hover;
     }
 }
 
 #brandName{
-    color: $color4;
+    color: $navbar-heading-color;
 
     &:hover{
-        color: $color3;
+        color: $navbar-heading-color-hover;
+        text-decoration: none;
     }
-}
-
-.navbar {
-    background-color: white;
 }
 
 .user-icon{
     /* margin: 5px; */
     margin-right: 15px;
-    color: $color4;
+    color: $navbar-icon-color;
     transition: all 0.3s;
 
     &:hover{
-        color: $color3;
+        color: $navbar-icon-color-hover;
     }
 }
 .logout-icon{
-    color: $color4;
+    color: $navbar-icon-color;
     transition: all 0.3s;
 
     &:hover{
-        color: $color3;
+        color: $navbar-icon-color-hover;
     }
 }
 
@@ -64,8 +66,8 @@ body {
     left: -250px;
     height: 100vh;
     z-index: 999;      /* To specity this is on top */
-    background: $color4;
-    color: white;
+    background: $sidebar-background;
+    // color: $sidebar-text;
     transition: all 0.3s;
     overflow-y: scroll;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
@@ -76,7 +78,7 @@ body {
 
     .sidebar-header{
         padding: 20px;
-        background: $color4;
+        color: $sidebar-heading-color;
     }
 
     ul.components{
@@ -87,18 +89,18 @@ body {
         padding: 10px;
         font-size: 1.1em;
         display: block;
-        color: white;
+        color: $sidebar-text-color;
     }
 
     ul li a:hover {
-        color: $sidebar-text;
-        background: $color3;
+        color: $sidebar-text-color-hover;
+        background-color: $sidebar-background-hover;
         text-decoration: none;
     }
 
     ul li.active{
-        color: $sidebar-text;
-        // background-color:$color3;
+        color: $sidebar-text-color;
+        background-color: $sidebar-background-active;
     }
 }
 
@@ -107,7 +109,6 @@ body {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: $color4;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -116,9 +117,13 @@ body {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 
+    color: $sidebar-dismiss-color;
+    background-color: $sidebar-dismiss-background;
+
     &:hover{
-        color: $sidebar-text;
-        background-color: $color3;
+        // color: $sidebar-text;
+        color: $sidebar-dismiss-color-hover;
+        background-color: $sidebar-dismiss-background-hover;
     }
 }
 
