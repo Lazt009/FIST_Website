@@ -18,7 +18,8 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
-
+    <!-- Datatable Plugin -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 </head>
 <body>
 
@@ -44,10 +45,10 @@
                 <li>
                     <a href="data-analytics.html">Data Analytics</a>
                 </li>
-                <li>
+                <li  class="active">
                     <a href="data-table.html">Data Table</a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="profile.html">Profile</a>
                 </li>
             </ul>
@@ -82,35 +83,27 @@
             
             <div class="body-bottom">
                 <br>
-                <h2 class="text-center">Profile</h2>
+                <h2 class="text-center">Data Table</h2>
                 <div class="container">
-                    <form>
-                        <div class="mb-3">
-                          <label for="inputEmail" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="inputName" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Enter Name">
-                        </div>
-                        <div class="mb-3">
-                          <label for="inputUID" class="form-label">UID</label>
-                          <input type="text" class="form-control" id="inputUID" placeholder="Enter UID">
-                        </div>
-                        <div class="mb-3">
-                            <label for="inputChannelID" class="form-label">Thingspeak Channel ID</label>
-                            <input type="text" class="form-control" id="inputChannelID" placeholder="Enter Channel ID">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+                    <table id="data-table" class="display table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Entry ID</th>
+                                <th>Created At</th>
+                                <th>PH</th>
+                                <th>RTD</th>
+                                <th>EC</th>
+                                <th>ORP</th>
+                                <th>DO</th>
+                            </tr>
+                        </thead>
+                      </table>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="overlay"></div>
-
 
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -121,7 +114,11 @@
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
+    <!-- Datatalbe plugin js -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
     <script src="js/index.js"></script>
+    <script src="js/data-table.js"></script>
 
 
 </body>
