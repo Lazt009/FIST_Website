@@ -1,0 +1,12 @@
+# Ignore Mac system files
+.DS_store
+
+# Ignore sidebar folder
+sidebar
+
+# Ignore temp.html file
+temp.html
+
+
+# Ignore temp.css folder
+temp.css
