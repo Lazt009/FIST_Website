@@ -21,7 +21,12 @@
   margin-left: 40%;
   color: white;
   border-radius: 10px;
-  /* border: 1px solid black; */
+  border: 1px solid black;
+}
+
+.loginCard button:hover {
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .loginCard button img {
