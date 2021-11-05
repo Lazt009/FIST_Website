@@ -1,0 +1,40 @@
+.loginCard {
+  margin: auto;
+  margin-top: 200px;
+  width: 30%;
+  height: 250px;
+  border-radius: 10px;
+  /* background-color: green; */
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.loginCard h3 {
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.loginCard button {
+  width: 20%;
+  padding: 5px;
+  height: auto;
+  margin-left: 40%;
+  color: white;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+}
+
+.loginCard button img {
+  width: 100%;
+  height: auto;
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .loginCard {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+  }
+}
+/*# sourceMappingURL=login.css.map */

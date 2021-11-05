@@ -8,6 +8,7 @@
 
     <!-- User made CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -20,77 +21,16 @@
 
     <script src="js/firebase.js" type="module"> </script>
 
-    <!-- Get auth info -->
-    <script src="js/check-auth.js" type="module"></script>
-
 </head>
 <body>
 
     <div class="wrapper">
-        <!-- Sidebar -->
-        <nav id="sidebar">
-
-            <!-- Close Button for Sidebar -->
-            <div id="dismiss">
-                <i class="fas fa-times"></i>
-            </div>
-
-            <!-- Header -->
-            <div class="sidebar-header">
-                <h3>FIST</h3>
-            </div>
-
-            <!-- Navbar Items -->
-            <ul class="list-unstyled components">
-                <li >
-                    <a href="home.html" > Home </a>
-                </li>
-                <li class="active">
-                    <a href="data-analytics.html">Data Analytics</a>
-                </li>
-                <li>
-                    <a href="data-table.html">Data Table</a>
-                </li>
-                <li>
-                    <a href="profile.html">Profile</a>
-                </li>
-            </ul>
-        </nav>
-
-
-        <!-- Content -->
-        <div class="content">
-
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-
-                    <!-- Button to Open Sidebar -->
-                    <button type="button" id="sidebarCollapse" class="btn menuBar">
-                        <i class="fas fa-bars"></i>
-                    </button>
-
-                    <!-- Brand Name -->
-                    <h2 id="brandName">Water Quality Management</h2>
-
-                    <!-- Logout Button -->
-                    <div >
-                        <a>
-                            <i class="fa fa-user user-icon"></i>
-                        </a>
-                        <a>
-                            <i class="fas fa-sign-out-alt logout-icon"></i>
-                        </a>
-                    </div>
-                </div>
-            </nav>
-            
-            <div class="body-bottom">
-                <br>
-                <h2 class="text-center">Data Analytics</h2>
-                <div class="container">
-                    
-                </div>
-            </div>
+        <div class="loginCard">
+            <h3 class="text-center">Sign-In</h3>
+            <p class="text-center">Login with your Google Account</p>
+            <button id="google-login">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" alt="">
+            </button>        
         </div>
     </div>
 
@@ -107,6 +47,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <script src="js/index.js"></script>
+    <script src="js/login.js" type="module"></script>
 
 
 </body>
