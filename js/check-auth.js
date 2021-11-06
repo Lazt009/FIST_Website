@@ -1,4 +1,4 @@
-import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js";
+import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js";
 
 function checkLogin() {
     const auth = getAuth();
@@ -23,3 +23,17 @@ function checkLogin() {
 
 
 window.onpaint = checkLogin();
+
+
+
+// signing out user if logged in 
+const logoutButton = document.querySelector("#logout-button");
+logoutButton.addEventListener("click", (e)=> {
+    const auth = getAuth();
+    signOut(auth).then(() => {
+    // Sign-out successful.
+    console.log("signing out");
+    }).catch((error) => {
+    // An error happened.
+    });
+});
