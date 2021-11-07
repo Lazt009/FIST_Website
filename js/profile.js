@@ -36,6 +36,7 @@ onAuthStateChanged(auth, (user) => {
                 .then( () => {
                     console.log("Channel Id Added");
                     alert("Channel id Added");
+                    window.location.href = "home.html";
                 })
             }
         });
@@ -49,7 +50,7 @@ onAuthStateChanged(auth, (user) => {
         .then( (response) => {
             //check all responses 
             response.forEach( (d) => {
-                console.log(d.id, user.uid);
+                // console.log(d.id, user.uid);
                 if( d.id == user.uid ) {
                     data = d.data()['channelId'];
                     exists = true;
