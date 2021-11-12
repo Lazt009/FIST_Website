@@ -59,6 +59,7 @@ onAuthStateChanged(auth, (user) => {
                                     {data:"field5"}
                                 ]
                             });
+                            $("#noData").toggle();
                         },
                     });
                 } );

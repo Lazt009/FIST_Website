@@ -8,6 +8,7 @@
 
     <!-- User made CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/data-analytics.css">
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -87,8 +88,81 @@
             <div class="body-bottom">
                 <br>
                 <h2 class="text-center">Data Analytics</h2>
+                <br>
+                <!-- HTML for the range of quality -->
                 <div class="container">
-                    
+
+                    <!-- Scale for Water Quality -->
+                    <div class="text-center">
+                        <h3 class="text-center">Water Quality Scale</h3>
+                        <div class="water-quality">
+                            <div class="water-quality-block danger">
+                                Hazardous
+                            </div>
+                            <div class="water-quality-block danger-warning">
+                                Very Bad
+                            </div>
+                            <div class="water-quality-block warning">
+                                Bad
+                            </div>
+                            <div class="water-quality-block warning-success">
+                                Moderate
+                            </div>
+                            <div class="water-quality-block success">
+                                Good
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="text-center">
+                        <h3 class="text-center">Chemical Pollutants Scale</h3>
+                        <div class="chemical-pollutant">
+                            <div class="chemical-pollutant-block basic">
+                                Basic
+                            </div>
+                            <div class="chemical-pollutant-block acidic">
+                                Acidic
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="text-center">
+                        <h3 class="text-center">Micro-Organizms Scale</h3>
+                        <div class="mirco-organizm">
+                            <div class="mirco-organizm-block danger">
+                                Present
+                            </div>
+                            <div class="mirco-organizm-block warning">
+                                In Less Quantity
+                            </div>
+                            <div class="mirco-organizm-block success">
+                                Not Present
+                            </div>
+                        </div>
+                    </div>
+                                        
+                </div>
+                <!-- HTML end here -->
+                <br>
+                <br>
+                <div class="container">
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Chemical Pollutants</th>
+                                <th scope="col">Water Quality</th>
+                                <th scope="col">Micro-Organizms</th>
+                                <th scope="col">Plastic Detection</th>
+                            </tr>
+                        </thead>
+                        <tbody class="data">
+                            <!-- We will load the Data Here -->
+                        </tbody>
+                    </table>
+                    <h5 id="noData" class="text-center">No Data to Display</h5>
                 </div>
             </div>
         </div>

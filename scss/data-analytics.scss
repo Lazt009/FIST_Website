@@ -1,0 +1,78 @@
+/* ---------------------------------------------------
+    Water Quality STYLES
+----------------------------------------------------- */
+.water-quality{
+    width: 100%;
+    // height:
+    // margin: 0px auto;
+    // background-color: black;
+    // border: 1px solid black;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.water-quality-block {
+    width: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 1.2em;
+}
+.danger{
+    background-color:  #ff0e0e;
+}
+.danger-warning{
+    background-color: #f2ba49;
+}
+.warning {
+    background-color: #FFCC00;
+}
+.warning-success{
+    background-color: #6f7408;
+}
+.success {
+    background-color: #4BB543;
+}
+
+/* ---------------------------------------------------
+    Chemical Pollutants STYLES
+----------------------------------------------------- */
+.chemical-pollutant{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.chemical-pollutant-block{
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 1.2rem;
+}
+.basic{
+    background-color: #ff0e0e;
+}
+.acidic{
+    background-color: #4BB543;
+}
+
+
+
+/* ---------------------------------------------------
+    Chemical Pollutants STYLES
+----------------------------------------------------- */
+.mirco-organizm{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.mirco-organizm-block{
+    width: 33%;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 1.2rem;
+}
