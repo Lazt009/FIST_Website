@@ -6,7 +6,35 @@
 body {
     // background-color: $color1;
 }
+.wrapper{
+    display: none;
+}
 
+.loader-div{
+    position: absolute;
+    top: 45%;
+    // left: 250px;
+    // left: 40%;
+    width: 100%;
+    // height: auto;
+}
+
+.loader{
+    width: 10%;
+    padding: 0px 0px;
+    height: auto;
+    margin: 0px 45%;
+
+    animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+}
 
 
 /* ---------------------------------------------------

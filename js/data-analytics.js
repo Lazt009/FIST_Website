@@ -134,7 +134,7 @@ const displayOnDate = (dateQuery) => {
     let ans = [];
     for (const feed of FEEDS) {
         let d = new Date(feed.created_at.slice(0, feed.created_at.length - 4));
-        console.log(dateQuery);
+        // console.log(dateQuery);
         if (dateFormatter(d, 1) == dateQuery) {
         ans.push(feed);
         }
@@ -149,6 +149,8 @@ const displayOnDate = (dateQuery) => {
 
 // function ends
 
+// constants
+var FEEDS;
 
 const auth = getAuth();
 onAuthStateChanged(auth, (user) => {
@@ -186,17 +188,32 @@ onAuthStateChanged(auth, (user) => {
 
 				// console.log("We got data");
                 $(document).ready(function() {
+                    // Initialize the data to todays date
+                    let today = new Date();
+                    $("#dateSelect").val(dateFormatter(today, 1));
+
                     $.ajax({
                         url: url,
                         success: function (data) {
-                            const FEEDS = data.feeds;
+                            FEEDS = data.feeds;
                             // console.log(FEEDS);
                             dataDisplay(FEEDS);
                             $("#noData").toggle();
                         },
                     });
                 } );
-
+                $("#submitButton").click(function (event) {
+                    event.preventDefault();
+                    let d = $("#dateSelect").val();
+                    console.log("Form Submitted");
+                    displayOnDate(d);
+                });
+                  
+                $("#reset").click(function (event){
+                    event.preventDefault();
+                    $("#noData").hide();
+                    dataDisplay(FEEDS);
+                });
               	//##################################################################################
         	}
         });

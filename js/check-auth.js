@@ -10,7 +10,9 @@ function checkLogin() {
 
             // user is logged in
             console.log("User is logged in ");
-            console.log(user,uid, user.displayName);
+            // console.log(user,uid, user.displayName);
+            $(".wrapper").toggle();
+            $(".loader-div").toggle();
 
         } else {
             // User is signed out

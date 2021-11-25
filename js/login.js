@@ -31,3 +31,8 @@ loginButton.addEventListener("click", (e)=> {
         const credential = GoogleAuthProvider.credentialFromError(error);
     });
 });
+
+$(document).ready(function () {
+    $(".wrapper").toggle();
+    $(".loader").toggle();
+});

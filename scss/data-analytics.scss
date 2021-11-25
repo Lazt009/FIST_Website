@@ -68,11 +68,58 @@
     flex-wrap: nowrap;
 }
 .mirco-organizm-block{
-    width: 33%;
+    width: 33.33%;
     height: 100%;
     margin-top: auto;
     margin-bottom: auto;
     padding-top: 4px;
     padding-bottom: 4px;
     font-size: 1.2rem;
+}
+
+
+/* ---------------------------------------------------
+    Date Sorting form STYLES
+----------------------------------------------------- */
+.date {
+    width: 30%;
+    margin: 10px auto;
+}
+
+label {
+    width: 100%;
+    text-align: center;
+    font: 2rem;
+    font-weight: bolder;
+    margin: 20px auto;
+}
+
+#dateSelect {
+    width: 100%;
+    /* margin: 10px auto; */
+    /* border-radius: 2px; */
+}
+  
+#submitButton {
+    width: 100%;
+    margin: 10px auto;
+}
+  
+.form-button {
+    /* margin: 10px auto; */
+    width: 100%;
+}
+
+.btn-3{
+    background-image : linear-gradient( to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100% );
+    &:hover{
+        background-image: linear-gradient( to right,#8fd3f4  0%, #84fab0 51%, #8fd3f4 100% );
+    }
+}
+
+.btn-1{
+    background-image : linear-gradient( to right, #f6d365 0%, #fda085 51%, #f6d365 100% );
+    &:hover{
+        background-image: linear-gradient( to right, #fda085 0%, #f6d365 51%, #fda085 100% );
+    }
 }
