@@ -129,7 +129,7 @@
                                     <h4>PH</h4>
                                 </div>
                                 <div class="display-card-body">
-                                    <h2>88.888</h2>
+                                    <h2 id="ph">88.888</h2>
                                 </div>
                                 <div class="display-card-heart">
                                     <i class="fas fa-heart heart-style"></i>
@@ -146,7 +146,7 @@
                                     <h4>RTD</h4>
                                 </div>
                                 <div class="display-card-body">
-                                    <h2>88.888</h2>
+                                    <h2 id="rtd">88.888</h2>
                                 </div>
                                 <div class="display-card-heart">
                                     <i class="fas fa-heart heart-style"></i>
@@ -163,7 +163,7 @@
                                     <h4>EC</h4>
                                 </div>
                                 <div class="display-card-body">
-                                    <h2>88.888</h2>
+                                    <h2 id="ec">88.888</h2>
                                 </div>
                                 <div class="display-card-heart">
                                     <i class="fas fa-heart heart-style"></i>
@@ -180,7 +180,7 @@
                                     <h4>ORP</h4>
                                 </div>
                                 <div class="display-card-body">
-                                    <h2>88.888</h2>
+                                    <h2 id="orp">88.888</h2>
                                 </div>
                                 <div class="display-card-heart">
                                     <i class="fas fa-heart heart-style"></i>
@@ -197,7 +197,7 @@
                                     <h4>DO</h4>
                                 </div>
                                 <div class="display-card-body">
-                                    <h2>88.888</h2>
+                                    <h2 id="do">88.888</h2>
                                 </div>
                                 <div class="display-card-heart">
                                     <i class="fas fa-heart heart-style"></i>
@@ -232,7 +232,7 @@
                                     <label class="form-label text-center" for="start-date">Start Date</label>
                                 </div>
                                 <div class="col-sm">
-                                    <input id="start-date" class="form-input form-select" type="datetime-local">
+                                    <input id="startDate" class="form-input form-select" type="datetime-local">
                                 </div>
                             </div>
                             <br>
@@ -241,7 +241,7 @@
                                     <label class="form-label text-center" for="end-date">End Date</label>
                                 </div>
                                 <div class="col-sm">
-                                    <input id="end-date" class="form-input form-select" type="datetime-local">
+                                    <input id="endDate" class="form-input form-select" type="datetime-local">
                                 </div>
                             </div>
                             <br>
@@ -250,13 +250,15 @@
                                     <label class="form-label text-center" for="graph-type">Graph Type </label>
                                 </div>
                                 <div class="col-sm">
-                                    <select id="graph-type" class="form-input form-select">
-                                        <option >Line </option>
-                                        <option > Bar </option>
-                                        <option > Column </option>
-                                        <option > Spline </option>
+                                    <select id="graphType" class="form-input form-select">
+                                        <option value="line" text="line">line</option>
+                                        <option value="bar" text="bar">bar</option>
+                                        <option value="column" text="column">column</option>
+                                        <option value="spline" text="spline">spline</option>
                                       </select>
                                 </div>
+                                <br><br><br><br><br><br>
+                                <div class="row" id="graphDiv"></div>
                             </div>
                         </form>
                     </div>
@@ -265,7 +267,7 @@
                 <br>
 
                 <!-- Container for Graphs -->
-                <div class="container">
+                <!-- <div class="container">
                     <div class="row">
                         <div class="col-sm">
                             <iframe class="iframe-style" src="https://thingspeak.com/channels/983726/charts/1?start=2021-02-25%2018:10:00&end=2021-05-08%2008:03:00&dynamic=true&type=line&update=1"></iframe>
@@ -291,7 +293,7 @@
                             <iframe class="iframe-style" src="https://thingspeak.com/channels/983726/charts/5?start=2021-02-25%2018:10:00&end=2021-05-08%2008:03:00&dynamic=true&type=line&update=1"></iframe>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
