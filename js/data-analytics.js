@@ -179,7 +179,7 @@ onAuthStateChanged(auth, (user) => {
             else{
               	// we got the channel id also
               	// console.log(data);
-              	const url = "https://api.thingspeak.com/channels/" + data + "/feeds.json";
+              	const url = "https://api.thingspeak.com/channels/" + data + "/feeds.json?results=831";
               	// console.log(url);
 
 
